@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color:#1C150F;
+}
+
+nav {
+    background-color: #1C150F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 30px;
+}
+
+#navbarLogo {
+    width: 230px;
+    /* 210 x 26.25 */
+}
+
+#navbarLinks a {
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display:inline-block;
+    transform: scale(1, 1.05);
+    margin: 6px 6px;
+    padding: 10px 4px;
+    font-stretch: ultra-condensed;
+}
+
+#shopAndBurger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+#shopAndBurger a {
+    
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display:inline-block;
+    transform: scale(1, 1.05);
+    margin: 6px 6px;
+    font-stretch: ultra-condensed;
+    padding: 20px;
+}
+
+#hamburger div {
+    height: 2px;
+    width: 16px;
+    background-color: #fff;
+    margin: 2px;
+
+}
+
+#left {
+    display: none;
+    width: 16px;
+    margin: 2px;
+}
+
+/* Drop down menu */
+
+#hamburger {
+    display: block;
+    background-color: #1C150F;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#menuBackground {
+    display:none;
+    background-color: rgb(0, 0, 0);
+    width: 350px;
+    height: 918px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    
+}
+
+
+#dropdownMenu  a {
+    background-color: rgb(0, 0, 0);
+    color:#fff;
+    display: flex;
+    justify-content: flex-end ;
+    flex-direction: column;
+    text-align: right;
+    text-transform: uppercase;
+    text-decoration: none;
+    transform: scale(1, 1.05);
+    padding: 10px;
+    border-bottom: 1pt solid #252525;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transform: scale(1, 1.05);
+    margin: 6px 6px;
+    padding: 10px 4px;
+    font-stretch: ultra-condensed;
+   
+}
+
+#buffer {
+    margin: 80px;
+}
+
+#mdiv {
+    width: 25px;
+    height: 25px;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid black;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 40px 5px 0px 0px;
+  }
+  
+  .mdiv {
+    height: 16px;
+    width: 2px;
+    margin-left: 12px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    Z-index: 1;
+  }
+
+#center {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    height: 799px;
+    overflow: hidden;
+}
+
+#pic1 {
+    height: 799px;
+    background-image: url(USSF_52_ramp_DSC_8083_desktop_e83656a9da.jpg);
+    background-position: center;
+}
+
+
+  /* checkbox hack */
+/* 
+ button[type=checkbox] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+ }
+
+ 
+
+ input[type=checkbox]:checked ~ menuBackground {
+    display: block;
+ }
+   */
+  .md {
+    height: 16px;
+    width: 2px;
+    background-color: #fff;
+    transform: rotate(90deg);
+    Z-index: 2;
+  }
+
+footer {
+    height: 81px;
+}
+
+footer nav {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+footer nav a {
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    color: #fff;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 20px 0px 20px 0px;
+    
+}
+
+/* media queries */
+@media (max-width: 960px) {
+  
+
+    nav {
+        padding: 0px 0px;
+    }
+
+    #navbarLogo {
+        display: flex;
+        justify-content: center;
+        width: 160px;
+    }
+
+    #navbarLinks  {
+        display: none;
+    }
+
+    #shopAndBurger a {
+        display: none;
+        
+    }
+
+    #hamburger div {
+        margin-right: 30px;
+    }
+
+    #left {
+        display: block;
+        margin-left: 50px
+    }
+
+}
